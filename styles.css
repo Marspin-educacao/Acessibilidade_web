@@ -1,0 +1,169 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hsl(190, 3%, 54%);
+    color: #333;
+}
+
+/* Header e Navegação */
+header {
+    background: linear-gradient(90deg, #1a1a1a 0%, #2d2d2d 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Seção Início */
+.inicio-fundo {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding: 2rem;
+}
+
+.botao-inicio {
+    background-color: #e74c3c;
+    border: none;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s;
+}
+
+.botao-inicio:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-inicio {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção Supercarros */
+.secao-supercarros {
+    background-color: #fff;
+    border-radius: 55px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-supercarros {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.texto-supercarros {
+    line-height: 1.8;
+    font-size: 1.4rem;
+    color: #555;
+    text-align: justify;
+}
+
+/* Seção Galeria */
+.fundo-galeria {
+    background: linear-gradient(135deg, #ecf0f1 0%, #dfe6e9 100%);
+}
+
+.img-galeria {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 10px rgba(212, 209, 209, 0.2);
+}
+
+.img-galeria:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário de Contato */
+.formulario {
+    background: linear-gradient(135deg, #2c3e50 0%, #4a6580 100%);
+    color: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.formulario .form-control {
+    border: none;
+    padding: 0.8rem 1rem;
+}
+
+.formulario .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(231, 76, 60, 0.25);
+}
+
+.formulario label {
+    font-weight: 500;
+}
+
+.formulario button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 0.8rem;
+    transition: all 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+footer i {
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.bi-whatsapp:hover {
+    color: #25D366 !important;
+}
+
+.bi-instagram:hover {
+    color: #E1306C !important;
+}
+
+.bi-tiktok:hover {
+    color: #69C9D0 !important;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio-fundo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .esquerda-conteudo {
+        margin-bottom: 2rem;
+    }
+
+    .secao-supercarros .container {
+        flex-direction: column;
+    }
+
+    .img-supercarros {
+        margin-bottom: 2rem;
+    }
+}

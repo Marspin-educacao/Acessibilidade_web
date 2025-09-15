@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Supercarros</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-3">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/carro_principal.jpg" alt="Logo Supercarros" class="nav-img" loading="lazy">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#supercarros">Supercarros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div
+                class="inicio-fundo d-flex flex-column flex-md-row justify-content-between align-items-center p-4 rounded-4">
+                <div class="esquerda-conteudo me-md-4 text-center text-md-start">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas !!!</h1>
+                    <p class="text-white mb-4">Descubra o mundo dos supercarros e sua incrível engenharia</p>
+                    <a href="#supercarros" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+                <img src="img/carro_preto2.jpg" alt="Carro esportivo preto moderno"
+                    class="img-fluid img-inicio mt-4 mt-md-0 rounded-4">
+            </div>
+        </section>
+
+        <section id="supercarros" class="my-5 py-5 secao-supercarros">
+            <div class="container d-flex flex-column flex-md-row align-items-center">
+                <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                    <img src="img/carro_vermelho1.jpg" class="rounded-4 img-supercarros" alt="Carro esportivo vermelho1"
+                        loading="lazy">
+                </div>
+                <div class="col-md-8 ps-md-5">
+                    <h2 class="mb-2">Carros Superesportivos</h2>
+                    <p class="p-2 texto-supercarros">Superesportivos: Onde a emoção e a engenharia se encontram.</p>
+                    <p class="text-left mb-2">
+                        <li>Potência, Elegância e Excelência</li>
+                        <li>Alta performance, luxo, materiais exclusivos e estilo inconfundível.</li>
+                        <li>Motores de alta potência, designs aerodinâmicos e tecnologia avançada.</li>
+                        <li>Aceleração impressionante, velocidades extremas e um controle preciso.</li>
+                        <li>Carros superesportivos representam o auge do desempenho automotivo.</li>
+                        <li>Ideal para quem busca adrenalina, status e a experiência única de dirigir uma obra-prima
+                            sobre rodas.</li>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="my-5">
+            <h2 class="text-center mb-5">Galeria</h2>
+            <div class="container fundo-galeria p-4 rounded-4">
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-5">
+                        <img src="img/carro_branco.jpg" alt="Carro esportivo branco"
+                            class="img-fluid rounded-4 img-galeria" loading="lazy">
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/carro_preto.jpg" alt="Carro esportivo preto"
+                            class="img-fluid rounded-4 img-galeria" loading="lazy">
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/carro_amarelo.jpg" alt="Carro esportivo amarelo"
+                            class="img-fluid rounded-4 img-galeria" loading="lazy">
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/carro_vermelho2.jpg" alt="Carro esportivo vermelho2"
+                            class="img-fluid rounded-4 img-galeria" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="my-5">
+            <div class="container d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 rounded-4 formulario p-5">
+                    <h2 class="mb-4 text-center">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2 mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-4 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <div class="mb-3">
+            <i class="bi bi-whatsapp me-3 fs-4"></i>
+            <i class="bi bi-instagram me-3 fs-4"></i>
+            <i class="bi bi-tiktok fs-4"></i>
+        </div>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
